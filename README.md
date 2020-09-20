@@ -100,7 +100,6 @@ This project has a CI pipeline that will test any new commits to ensure that the
 - Docker image could be further optimized.
 </pre>
 <h3>7. Future Improvements</h3>
- Next improvements
  <pre>
  - SSL on MS
  - Helm charts for k8s deployments
