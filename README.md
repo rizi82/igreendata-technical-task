@@ -1,9 +1,9 @@
 <h1>Technical Task </h1>
-<code>A simple Node Js based web app involving a CI pipeline and testing.</code>
+<code>A simple Node JS based web app involving a CI pipeline and testing.</code>
 
 <h2>Details</h2>
 
-Language: Node Js
+Language: Node JS
 Version: 14.11.0
 
 <pre>
@@ -33,7 +33,7 @@ Dependancies
 7. Future Improvements
 </pre>
 <h3>1. Getting Started</h3>
-The below instructions will illustrate how to start and run the simple web app in either a docker container locally or out of Node Js on the local host.
+The below instructions will illustrate how to start and run the simple web app in either a docker container locally or out of Node JS on the local host.
 
 <h3>2. Local Node JS</h3>
 Instructions to run with Node JS:
@@ -64,8 +64,6 @@ docker run -p 3000:3000 -d  izi82/igreendata-technical-task
 The App starts on port 3000, therefore the endpoints are available here:
 http://localhost:3000
 http://localhost:3000/version
-
-Last Build: Build Status
 </pre>
 <h3>4. Jenkins Pipeline </h3>
 <p>
