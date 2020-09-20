@@ -7,7 +7,7 @@ Language: Node Js
 Version: 14.11.0
 
 <pre>
-Dependancies:
+Dependancies
 
 - Express
 - Mocha
@@ -68,7 +68,7 @@ The App starts on port 3000, therefore the endpoints are available here:
 
 http://localhost:3000
 
-http://localhost:3000/healthcheck
+http://localhost:3000/version
 
 Last Build: Build Status
 </pre>
@@ -96,21 +96,17 @@ This project has a CI pipeline that will test any new commits to ensure that the
  kubectl get all -n green
  </pre>
 <h3>6. Limitations</h3>
-<article>
-No https support, only http support.
-Test Coverage could be improved.
-Docker image could be further optimized.
-</article>
+- No https support, only http support.
+- Test Coverage could be improved.
+- Docker image could be further optimized.
 <h3>7. Future Improvements</h3>
-Next improvements:
-<article>
- SSL on MS
- Helm charts for k8s deployments
- Auto trigger CD job on dockerhub push
- docker image 'staging' flow i.e. build, test, release
- Semantic versioning for application and tag docker image with the same
- EKS setup  assumption
- DNS name for API
- private docker repository
- Better logging and tracing for debugging
- </article>
+ Next improvements
+ - SSL on MS
+ - Helm charts for k8s deployments
+ - Auto trigger CD job on dockerhub push
+ - docker image 'staging' flow i.e. build, test, release
+ - Semantic versioning for application and tag docker image with the same
+ - EKS setup  assumption
+ - DNS name for API
+ - private docker repository
+ - Better logging and tracing for debugging
