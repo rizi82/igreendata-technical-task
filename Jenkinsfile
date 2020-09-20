@@ -31,8 +31,10 @@ pipeline {
      stage('Building image') {
       steps{
         script{
-          dockerImage = docker.build("${registry}:${uuid_hash}")
+          commit_hash = sh (script: "git log -n 1 --pretty=format:'%H'", returnStdout: true)
+          dockerImage = docker.build("${registry}:${uuid_hash}", "--build-arg GIT_COMMIT=${commit_hash} --build-arg APP_VERSION=1.0 .")
           echo "dockerImage: ${dockerImage}"
+          echo "COMMIT_HASH: ${commit_hash}"
         }
       }
     }
