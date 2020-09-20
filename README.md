@@ -45,12 +45,9 @@ Node JS (Tested on Node V14.11.0 and npm 6.14.8)
 Clone the repository
 git@github.com:rizi82/igreendata-technical-task.git
 
-Install the Node Js Dependancies:
-
+<b>Install the Node JS Dependancies</b>
 npm install
-
-Test the Application:
-
+<b>Test the Application</b>
 npm run test
 </pre>
 <h3>3. Local Docker</h3>
@@ -59,15 +56,13 @@ npm run test
 
 <h4>3.2 Running with Docker</h4>
 <pre>
-Build docker image
+<b>Build docker image</b>
 docker build --build-arg GIT_COMMIT=123 --build-arg APP_VERSION=1.0  -t rizi82/igreendata-technical-task .
-Run docker image
+<b>Run docker image</b>
 docker run -p 3000:3000 -d  izi82/igreendata-technical-task
 
 The App starts on port 3000, therefore the endpoints are available here:
-
 http://localhost:3000
-
 http://localhost:3000/version
 
 Last Build: Build Status
