@@ -80,14 +80,12 @@ This project has a CI pipeline that will test any new commits to ensure that the
  </p>
  <h3>Deployment</h3>
  <h4>5.1 Prerequisites</h4>
- <pre>
  The EKS cluster has already setup and running for the application
  <h4>5.2 Create a cluster </h4>
  <pre>
   eksctl create cluster --name my-cluster --version 1.17 --fargate
   </pre>
   The above command will take approx 15 min to setup a cluster with nodes.
-  </pre> 
  <h4>5.3 Deployment on cluster </h4>  
  Deployment File: https://github.com/rizi82/igreendata-technical-task/tree/master/deployment 
  <pre>
@@ -96,11 +94,14 @@ This project has a CI pipeline that will test any new commits to ensure that the
  kubectl get all -n green
  </pre>
 <h3>6. Limitations</h3>
+<pre>
 - No https support, only http support.
 - Test Coverage could be improved.
 - Docker image could be further optimized.
+</pre>
 <h3>7. Future Improvements</h3>
  Next improvements
+ <pre>
  - SSL on MS
  - Helm charts for k8s deployments
  - Auto trigger CD job on dockerhub push
@@ -110,3 +111,4 @@ This project has a CI pipeline that will test any new commits to ensure that the
  - DNS name for API
  - private docker repository
  - Better logging and tracing for debugging
+ </pre>
