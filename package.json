@@ -1,0 +1,21 @@
+{
+  "name": "technical-task-app",
+  "version": "1.0.0",
+  "description": "A simple application which has a single “/version” endpoint.",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "author": "Rizwan Akram",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "express": "^4.16.4",
+    "mocha": "^6.2.3"
+  }
+}
