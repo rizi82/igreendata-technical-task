@@ -1,0 +1,40 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-internal: 'true'
+  labels:
+    run: igreendata-technical-task
+  name: my-igreendata-technical-task
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app: igreendata-technical-task
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: my-igreendata-technical-task
+  name: igreendata-technical-task-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: igreendata-technical-task
+  template:
+    metadata:
+      labels:
+        app: igreendata-technical-task
+    spec:
+      containers:
+        - image: 'rizi82/igreendata-technical-task:latest'
+          name: igreendata-technical-task
+          ports:
+            - containerPort: 3000
