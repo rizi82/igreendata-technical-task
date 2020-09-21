@@ -57,7 +57,13 @@ pipeline {
             }
         }
     }
-    
+    stage('Deploy to K8S') {
+      steps{
+        sh """
+        kubectl apply -f green.yml
+        """
+      }
+    }  
     stage('Remove Unused docker image') {
       steps{
         sh "docker rmi -f $registry:${uuid_hash}"
