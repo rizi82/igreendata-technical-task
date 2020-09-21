@@ -40,7 +40,9 @@ Jenkins server has already setup and running and following plugins installed.
 - plugin 3
    
 ## Bootstrap
+## Create DockerHub credentials
 
+## Jenkinsfile
 Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
 
 ## Pipeline Stages
