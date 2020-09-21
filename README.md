@@ -41,6 +41,7 @@ Jenkins server has already setup and running and following plugins installed.
    
 ## Bootstrap
 ## Create DockerHub credentials
+Please add dockerhub logic credentials with this name
 
 ## Jenkinsfile
 Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
