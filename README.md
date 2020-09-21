@@ -26,12 +26,18 @@ The EKS cluster has already setup and running for the application
 eksctl create cluster --name my-cluster --version 1.17 --fargate
 ```
 The above command will take approx 15 min to setup a cluster with nodes.
+
 # Jenkins Pipeline
 This project has a CI pipeline that will test any new commits to ensure that the application still functions after any new updates,
  this is done by Jenkins CI and details can be seen here:
+
 ## Assumptions
 
-Jenkins server has already setup and running and all plugins installed.
+Jenkins server has already setup and running and following plugins installed.
+
+- plugin 1
+- plugin 2
+- plugin 3
    
 ## Bootstrap
 
@@ -40,12 +46,26 @@ Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Je
 ## Pipeline Stages
 
 ### Checkout
+This stage clones application code repository to build server
+
 ### Install dependencies
+NodeJS ependencies are installed in this stage
+
 ### Test
-### Build Contain
+Application testing performed in this stage
+
+### Build Container
+Application docker image is created in this stage
+
 ### Container Scan
+Docker image is scanned using clair
+
 ### Push to DockerHub
+Docker image is pushed to DockerHub
+
 ### Deploy
+Application is deployed to kubernetes (EKS)
+
 # Limitations
 
 * No https support, only http support.
