@@ -18,11 +18,9 @@ Dependancies
 <h2>Overview</h2>
 <pre>
 1. Getting Started
-2. Jenkins Pipeline
-3. Deployment
-   3.1 Prerequisites
-   3.2 Create a cluster  
-   3.3 Deployment on cluster  
+2. Prerequisites
+2.1 Create a cluster
+3. Jenkins Pipeline
 4. Limitations
 5. Future Improvements
 </pre>
