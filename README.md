@@ -51,6 +51,7 @@ Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Je
 * No https support, only http support.
 * Test Coverage could be improved.
 * Docker image could be further optimized.
+* EKS cluster setup code not provided due to time limitation
 
 # Future Improvements
 
