@@ -33,7 +33,10 @@ The below instructions will illustrate how to start and run the simple web app i
 <p>
 This project has a CI pipeline that will test any new commits to ensure that the application still functions after any new updates,
  this is done by Jenkins CI and can be seen here:
- Jenkinsfile: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
+ Jenkins server has already setup and running and all plugins installed.
+   
+ Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
+ 
  </p>
  <h3>Deployment</h3>
  <h4>3.1 Prerequisites</h4>
@@ -63,7 +66,7 @@ This project has a CI pipeline that will test any new commits to ensure that the
  - Auto trigger CD job on dockerhub push
  - docker image 'staging' flow i.e. build, test, release
  - Semantic versioning for application and tag docker image with the same
- - EKS setup  assumption
+ - EKS setup assumption
  - DNS name for API
  - private docker repository
  - Better logging and tracing for debugging
