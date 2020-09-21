@@ -15,9 +15,12 @@ Version: 14.11.0
 
 # Getting Started
 The below instructions will illustrate how to start and run the simple web app in either a docker container locally or out of Node JS on the local host.
+
 # Prerequisites
+
 ## EKS Cluster
 The EKS cluster has already setup and running for the application
+
 ### Creae EKS cluster 
 ```
 eksctl create cluster --name my-cluster --version 1.17 --fargate
@@ -25,11 +28,24 @@ eksctl create cluster --name my-cluster --version 1.17 --fargate
 The above command will take approx 15 min to setup a cluster with nodes.
 # Jenkins Pipeline
 This project has a CI pipeline that will test any new commits to ensure that the application still functions after any new updates,
- this is done by Jenkins CI and can be seen here:
- Jenkins server has already setup and running and all plugins installed.
+ this is done by Jenkins CI and details can be seen here:
+## Assumptions
+
+Jenkins server has already setup and running and all plugins installed.
    
- Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
- 
+## Bootstrap
+
+Jenkins file: https://github.com/rizi82/igreendata-technical-task/blob/master/Jenkinsfile
+
+## Pipeline Stages
+
+### Checkout
+### Install dependencies
+### Test
+### Build Contain
+### Container Scan
+### Push to DockerHub
+### Deploy
 # Limitations
 
 * No https support, only http support.
