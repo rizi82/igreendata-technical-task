@@ -1,4 +1,4 @@
-<h1>Technical Task </h1>
+#Technical Task
 <code>A simple Node JS based web app involving a CI pipeline and testing.</code>
 
 <h2>Details</h2>
